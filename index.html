@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Trọng Quốc - Senior Game Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.0/lucide.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        .hero-gradient { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+        .project-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .project-card:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 transition-colors duration-300">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                TrongQuoc.dev
+            </span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider">
+                <a href="#hero" class="hover:text-orange-600">Giới thiệu</a>
+                <a href="#experience" class="hover:text-orange-600">Kinh nghiệm</a>
+                <a href="#projects" class="hover:text-orange-600">Dự án</a>
+                <a href="#tech" class="hover:text-orange-600">Kỹ năng</a>
+                <a href="#contact" class="px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="pt-32 pb-20 px-6 hero-gradient">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-orange-600 font-semibold mb-4 tracking-widest uppercase">Team Leader / Senior Game Developer</h2>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-slate-900 leading-tight">
+                Sáng tạo trải nghiệm <span class="text-orange-600">Game</span> đỉnh cao.
+            </h1>
+            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Hơn 13 năm kinh nghiệm thực chiến tại <strong>TOPEBOX</strong>. Chuyên gia Unity, C# & C++ dẫn dắt đội ngũ tạo ra những sản phẩm triệu lượt tải toàn cầu.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="px-8 py-3 bg-slate-900 text-white rounded-full font-bold hover:bg-slate-800 transition shadow-lg">Xem dự án của tôi</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="max-w-6xl mx-auto px-6 -mt-10 relative z-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 text-center">
+                <div class="text-3xl font-bold text-orange-600">13+</div>
+                <div class="text-slate-500 text-xs uppercase tracking-tighter mt-1 font-semibold">Năm kinh nghiệm</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 text-center">
+                <div class="text-3xl font-bold text-orange-600">UNITY</div>
+                <div class="text-slate-500 text-xs uppercase tracking-tighter mt-1 font-semibold">Expertise</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 text-center">
+                <div class="text-3xl font-bold text-orange-600">LEAD</div>
+                <div class="text-slate-500 text-xs uppercase tracking-tighter mt-1 font-semibold">Management</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100 text-center">
+                <div class="text-3xl font-bold text-orange-600">MILLION+</div>
+                <div class="text-slate-500 text-xs uppercase tracking-tighter mt-1 font-semibold">Downloads</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <h3 class="text-orange-600 font-bold uppercase tracking-widest text-sm mb-2">Portfolio</h3>
+                <h2 class="text-4xl font-bold">Dự án tiêu biểu</h2>
+            </div>
+            <p class="text-slate-500 max-w-md text-right hidden md:block italic text-sm">
+                Tham gia phát triển chính và dẫn dắt kỹ thuật cho nhiều hit game toàn cầu.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project: Politaire/Heroes -->
+            <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl">
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-bold text-orange-600 bg-orange-50 px-3 py-1 rounded-full uppercase">2025 • New</span>
+                        <div class="flex space-x-2 text-slate-400">
+                            <i data-lucide="smartphone" class="w-4 h-4"></i>
+                            <i data-lucide="monitor" class="w-4 h-4"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Politaire / Heroes</h4>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed line-clamp-3">Sự tiến hóa của Politaire. Một tựa game roguelike deckbuilder cao cấp dành cho Steam và iOS.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-1 rounded">PC/iOS</span>
+                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-1 rounded">Roguelike</span>
+                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-1 rounded">Unity</span>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=OE4iIw1kfkE" target="_blank" class="flex items-center justify-center w-full py-3 bg-red-600 text-white rounded-xl font-bold hover:bg-red-700 transition space-x-2 shadow-md">
+                        <i data-lucide="play-circle" class="w-5 h-5"></i>
+                        <span>Xem Video</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project: Mimiland -->
+            <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl">
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full uppercase">2024 • AI World</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Mimiland</h4>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed line-clamp-3">Dự án AI-powered world nơi người chơi tự tạo board game. Tầm nhìn tham vọng nhất của đội ngũ.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-1 rounded">AI-Powered</span>
+                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-1 rounded">Unity</span>
+                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-1 rounded">Platform</span>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=O1FN5gurMbg" target="_blank" class="flex items-center justify-center w-full py-3 bg-red-600 text-white rounded-xl font-bold hover:bg-red-700 transition space-x-2 shadow-md">
+                        <i data-lucide="play-circle" class="w-5 h-5"></i>
+                        <span>Xem Video</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project: Sky Dancer -->
+            <div class="project-card bg-slate-900 text-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl">
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-bold text-orange-400 bg-orange-950/50 px-3 py-1 rounded-full uppercase">2018 • Featured</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2 text-white">Sky Dancer</h4>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed line-clamp-3">Cú nhảy táo bạo vào thế giới Zen Running. Được vinh danh toàn cầu bởi Apple và Google.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] font-bold bg-slate-800 px-2 py-1 rounded text-orange-400">Award Winning</span>
+                        <span class="text-[10px] font-bold bg-slate-800 px-2 py-1 rounded text-orange-400">Global Hit</span>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=mctzwF-HoNw" target="_blank" class="flex items-center justify-center w-full py-3 bg-red-600 text-white rounded-xl font-bold hover:bg-red-700 transition space-x-2 shadow-md">
+                        <i data-lucide="play-circle" class="w-5 h-5"></i>
+                        <span>Xem Video</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project: Century City -->
+            <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl">
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-bold text-slate-500 bg-slate-50 px-3 py-1 rounded-full uppercase">2016</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Century City</h4>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed line-clamp-3">Sự kết hợp gây nghiện giữa Clicker và City Builder. Đầy quyến rũ và lôi cuốn người chơi.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-1 rounded">Mobile</span>
+                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-1 rounded">Simulation</span>
+                    </div>
+                    <a href="https://www.youtube.com/shorts/-cGhmhYldr4" target="_blank" class="flex items-center justify-center w-full py-3 bg-red-600 text-white rounded-xl font-bold hover:bg-red-700 transition space-x-2 shadow-md">
+                        <i data-lucide="play-circle" class="w-5 h-5"></i>
+                        <span>Xem Video</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project: Feed’em Burger -->
+            <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl">
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-bold text-slate-500 bg-slate-50 px-3 py-1 rounded-full uppercase">2016</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Feed’em Burger</h4>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed line-clamp-3">Nhanh, độc đáo và thú vị. Tựa game casual được yêu thích với nhịp độ cao.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-1 rounded">Casual</span>
+                        <span class="text-[10px] font-bold bg-slate-100 px-2 py-1 rounded">Logic</span>
+                    </div>
+                    <a href="https://www.youtube.com/shorts/4YAvt5KWPiU" target="_blank" class="flex items-center justify-center w-full py-3 bg-red-600 text-white rounded-xl font-bold hover:bg-red-700 transition space-x-2 shadow-md">
+                        <i data-lucide="play-circle" class="w-5 h-5"></i>
+                        <span>Xem Video</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- More Projects Info -->
+            <div class="border-2 border-dashed border-slate-200 rounded-3xl flex items-center justify-center p-8 text-center bg-slate-50/50">
+                <div>
+                    <i data-lucide="gamepad-2" class="w-10 h-10 mx-auto mb-3 text-slate-300"></i>
+                    <p class="text-sm text-slate-500 font-medium px-4">Đã tham gia vào nhiều giai đoạn then chốt của hàng chục dự án khác tại TOPEBOX từ 2012.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-12 text-center">Hành trình tại TOPEBOX</h3>
+            <div class="space-y-12">
+                <div class="relative pl-8 border-l-2 border-orange-200">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-orange-600 rounded-full"></div>
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h4 class="text-xl font-bold uppercase">Team Leader (Dev)</h4>
+                            <p class="text-orange-600 font-bold italic">Tháng 10/2012 - Tháng 03/2026</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 p-8 bg-white rounded-2xl shadow-sm">
+                        <ul class="text-slate-700 space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <span class="mr-2 text-orange-500">▹</span>
+                                <span>Lập trình, thiết kế kiến trúc và phát triển game sử dụng Unity engine cho di động.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2 text-orange-500">▹</span>
+                                <span>Quản lý nhóm lập trình viên, điều phối công việc và kiểm soát chất lượng mã nguồn.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2 text-orange-500">▹</span>
+                                <span>Tối ưu hóa hiệu suất và nâng cao trải nghiệm người dùng cuối.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="tech" class="py-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-16">Kỹ năng chuyên môn</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h4 class="text-lg font-bold mb-6 flex items-center"><i data-lucide="code" class="mr-2 text-orange-500"></i> Công nghệ</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm mb-1"><span>Unity Engine</span><span class="font-bold">95%</span></div>
+                            <div class="h-1.5 bg-slate-100 rounded-full"><div class="h-full bg-orange-500 w-[95%]"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-sm mb-1"><span>C# / C++</span><span class="font-bold">90%</span></div>
+                            <div class="h-1.5 bg-slate-100 rounded-full"><div class="h-full bg-orange-500 w-[90%]"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h4 class="text-lg font-bold mb-6 flex items-center"><i data-lucide="users" class="mr-2 text-blue-500"></i> Quản lý</h4>
+                    <ul class="text-sm text-slate-600 space-y-3">
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-blue-500"></i> Dẫn dắt đội ngũ kỹ thuật</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-blue-500"></i> Phân tích bài toán logic</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-blue-500"></i> Tối ưu quy trình phát triển</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+                    <h4 class="text-lg font-bold mb-6 flex items-center"><i data-lucide="wrench" class="mr-2 text-purple-500"></i> Khác</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs">Photoshop</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs">Git / SVN</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs">Agile/Scrum</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs">System Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section id="contact" class="py-24 bg-slate-900 text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h3 class="text-4xl font-bold mb-6">Hợp tác phát triển</h3>
+            <p class="text-slate-400 mb-12">Sẵn sàng thảo luận về các dự án Game đầy tiềm năng.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 bg-slate-800 rounded-2xl border border-slate-700">
+                    <i data-lucide="phone" class="w-6 h-6 mx-auto mb-4 text-orange-500"></i>
+                    <p class="text-xl font-bold">0938.776.550</p>
+                </div>
+                <div class="p-8 bg-slate-800 rounded-2xl border border-slate-700">
+                    <i data-lucide="mail" class="w-6 h-6 mx-auto mb-4 text-orange-500"></i>
+                    <p class="text-xl font-bold">ntq.quoc@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-slate-900 border-t border-slate-800 text-center text-slate-500 text-xs uppercase tracking-widest">
+        &copy; 2026 Nguyễn Trọng Quốc - Senior Developer
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
